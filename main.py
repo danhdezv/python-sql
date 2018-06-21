@@ -4,7 +4,7 @@ try:
     connection = sqlite3.connect("company.db") ##CREATE DATABASE company:
 
     cursor = connection.cursor()
-
+    #Consulta SQL
     sql_command = """
         CREATE TABLE IF NOT EXISTS employee (
         id INTEGER PRIMARY KEY ,
@@ -13,7 +13,7 @@ try:
         gender CHAR(1),
         birth_date DATE
     ); """
-
+    #Consulta SQL
     cursor.execute(sql_command)
     sql_command = """
         INSERT INTO employee (
